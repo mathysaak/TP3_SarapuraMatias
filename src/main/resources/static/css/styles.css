@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    color: black;
+}
+
+header#main-header {
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header#main-header h1 {
+    margin: 0;
+}
+
+nav.main-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.main-nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav.main-nav ul li a:hover {
+    background-color: gray;
+}
+
+main.main-content {
+    padding: 20px;
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+section.registro {
+    margin-bottom: 20px;
+}
+
+section.registro h2 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.genero-options,
+.categoria-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genero-options label,
+.categoria-options label {
+    margin-left: 5px;
+}
+
+button.btn-primary {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+footer#main-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer#main-footer p {
+    margin: 0;
+}
+aside {
+    margin: 0;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+ul.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+ul.footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul.footer-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+

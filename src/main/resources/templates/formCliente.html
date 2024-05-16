@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>Registro de Cliente</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="registro">
+            <h2>Formulario de Registro</h2>
+            <form id="registroForm">
+                <div class="form-group">
+                    <label for="dni">DNI:</label>
+                    <input type="number" id="dni" name="dni" required placeholder="Ingrese DNI">
+                </div>
+
+                <div class="form-group">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" id="nombres" name="nombres" required placeholder="Ingrese Nombres">
+                </div>
+
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required placeholder="Ingrese Apellidos">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Género:</label>
+                    <div class="genero-options">
+                        <input type="radio" id="generoM" name="genero" value="masculino" required>
+                        <label for="generoM">Masculino</label>
+
+                        <input type="radio" id="generoF" name="genero" value="femenino" required>
+                        <label for="generoF">Femenino</label>
+
+                        <input type="radio" id="generoX" name="genero" value="x" required>
+                        <label for="generoX">X</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ingrese Correo Electrónico">
+                </div>
+
+                <div class="form-group">
+                    <label for="domicilio">Domicilio:</label>
+                    <input type="text" id="domicilio" name="domicilio" required placeholder="Ingrese Domicilio">
+                </div>
+
+                <div class="form-group">
+                    <label for="provincia">Provincia:</label>
+                    <select id="provincia" name="provincia" required>
+                        <option value="">Seleccione una provincia</option>
+                        <option value="jujuy">JUJUY</option>
+                        <option value="salta">SALTA</option>
+                        <option value="cordoba">CORDOBA</option>
+                        <option value="tucuman">TUCUMAN</option>
+                        <option value="uruguay">URUGUAY</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Número de teléfono celular:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese Teléfono Celular">
+                </div>
+
+                <div class="form-group">
+                    <label for="categorias">Categorías de interés:</label>
+                    <div class="categoria-options">
+                        <input type="checkbox" id="categoriaTurismo" name="categoria[]" value="turismo">
+                        <label for="categoriaTurismo">Turismo Religioso</label>
+
+                        <input type="checkbox" id="categoriaDeportes" name="categoria[]" value="deportes">
+                        <label for="categoriaDeportes">Deportes</label>
+
+                        <input type="checkbox" id="categoriaTraking" name="categoria[]" value="traking">
+                        <label for="categoriaTraking">Traking</label>
+
+                        <input type="checkbox" id="categoriaGastronomia" name="categoria[]" value="gastronomia">
+                        <label for="categoriaGastronomia">Gastronomía</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="sugerencias">Sugerencias para la empresa:</label>
+                    <textarea id="sugerencias" name="sugerencias" rows="5" cols="20" placeholder="Escriba sugerencia"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required minlength="8" maxlength="16" placeholder="Ingrese Contraseña">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmar contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" maxlength="16" placeholder="Confirme Contraseña">
+                </div>
+
+                <div>
+                    <input type="checkbox" id="terminosCondiciones" name="terminosCondiciones" required>
+                    <label for="terminosCondiciones">Acepto los términos y condiciones</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="recibirInformacion" name="recibirInformacion">
+                    <label for="recibirInformacion">Acepto recibir información relativa a la empresa</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+        </section>
+    </main>
+    <footer id="main-footer">
+        <p>Contacto: ejemplo@universidad.com</p>
+        <ul class="footer-links">
+            <li><a href="https://twitter.com/ejemplo" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/ejemplo" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
